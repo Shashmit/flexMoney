@@ -8,7 +8,7 @@ const paymentFormSchema = z.object({
   selectedBatch: z.string(),
 });
 
-router.post("/paymentForm", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const inputData = paymentFormSchema.parse(req.body);
     if (inputData.age < 18 || inputData.age > 65) {
