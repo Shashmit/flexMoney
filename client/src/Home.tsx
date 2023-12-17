@@ -47,7 +47,7 @@ function Home() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
     try{
-      const response = await axios.post<FormalData>(import.meta.env.VITE_API + "/api/paymentForm",formData);
+      const response = await axios.post<FormalData>(import.meta.env.VITE_API + "/api/portal",formData);
       setSuccessMessage(!successMessage);
       navigate('/success', {state: {noWay: response.data}});
     }catch(err :any){
