@@ -2,7 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
-const apiRouter = require("./router/urlhandler");
+const apiRouter = require("./handler/urlhandler");
 
 app.use(
   cors({
@@ -18,7 +18,7 @@ dotenv.config();
 app.use(express.json());
 
 app.get("/ping", (req, res) => {
-  res.send("pong");
+  res.json("pong");
 });
 
 app.use("/api", apiRouter);
