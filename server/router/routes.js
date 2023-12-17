@@ -29,6 +29,7 @@ router.post("/paymentForm", async (req, res) => {
     res.status(400).json({ success: false, message: err.message });
   }
 });
+
 function completePayment({ user, amount }) {
   // payment logic
   console.log("payment done");

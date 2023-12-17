@@ -2,21 +2,26 @@ const express = require("express");
 const mongoose = require("mongoose");
 const app = express();
 const cors = require("cors");
-const path = require("path");
-app.use(cors());
-const PORT = process.env.PORT || 3000;
+const apiRouter = require("./router/Routes");
+
+app.use(
+  cors({
+    origin: "*",
+  })
+);
+
+const PORT = 3000;
 
 const dotenv = require("dotenv");
 dotenv.config();
-app.use(express.json());
 
-const apirouter = require("./router/routes");
+app.use(express.json());
 
 app.get("/ping", (req, res) => {
   res.send("pong");
 });
 
-app.use("/api", apirouter);
+app.use("/api", apiRouter);
 
 mongoose
   .connect(process.env.CONNECTION_TO_MONGOOSE)
