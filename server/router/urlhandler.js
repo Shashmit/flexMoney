@@ -1,6 +1,6 @@
 const router = require("express").Router();
 const { z } = require("zod");
-const User = require("../model/user");
+const User = require("../model/User");
 
 const paymentFormSchema = z.object({
   name: z.string(),
