@@ -119,8 +119,8 @@ function Home() {
       <div className="bg-blue-500 text-white p-4 mx-10 rounded-lg max-md:relative max-md:bottom-2 relative text-center">
         <div className=''>
           <span className="text-xl">Thank you for visiting! ❤️</span> 
-            <span className=''><a href="https://github.com/Shashmit" className="underline">GitHub  </a>|</span>
-            <span className=''> <a href="https://www.linkedin.com/in/shashmit-kumar-23b75620a/" className="underline">LinkedIn</a></span>
+            <span className=''><a href="https://github.com/Shashmit/flexMoney" className="underline">GitHub  </a>|</span>
+            <span className=''> <a href="https://www.linkedin.com/in/shashmit-kumar-23b75620a/" className="underline text-orange-600">LinkedIn</a></span>
         </div>
       </div>
     </div>
