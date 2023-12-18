@@ -56,14 +56,14 @@ function Home() {
   }
 
   return (
-   <div className='bg-primary min-h-screen'>
-      <div className="flex max-md:flex-col p-10 mx-4 flex-1 justify-around flex-row align-items gap-9">
-          <div className='flex flex-col mt-10'>
+   <div className='bg-white min-h-screen'>
+      <div className="flex max-md:flex-col p-9 mx-4 flex-1 justify-around flex-row align-items gap-9">
+          <div className='flex flex-col mt-5'>
             <h2 className="font-oswald text-9xl max-md:text-7xl text-green-600">Yoga Class</h2>
-            <p className='text-2xl max-md:text-xl font-sans text-slate-100'><span className=' text-green-500 font-sans'>Flex</span>money</p>
+            <p className='text-2xl max-md:text-xl font-sans text-black'><span className=' text-green-500 font-sans'>Flex</span>money</p>
           </div>
-          <form className='flex flex-col gap-2' onSubmit={handleSubmit}>
-            <label className='text-white'>What is your name?
+          <form className='flex flex-col gap-2 mt-10 p-3' onSubmit={handleSubmit}>
+            <label className='text-black'>What is your name?
             <input
               type="text"
               className="w-full p-4 bg-tertiary border border-gray-600  text-slate-950  focus:outline-none rounded-lg focus:bg-black focus:text-tertiary "
@@ -74,7 +74,7 @@ function Home() {
               required
             />
             </label>
-            <label className='text-white'>What is your age?
+            <label className='text-black'>What is your age?
             <input
               type="number"
               className="w-full p-4 bg-tertiary border border-gray-600 text-slate-950  focus:outline-none rounded-lg focus:bg-black focus:text-tertiary "
@@ -85,7 +85,7 @@ function Home() {
             />
             <p>{errorMessage}</p>
             </label>
-            <label className='text-white'>What is your batch?
+            <label className='text-black'>What is your batch?
            <select name="selectedBatch" value={formData.selectedBatch} onChange={handleChange} 
                   required className="w-full p-4 bg-tertiary text-slate-950 border border-gray-600 focus:outline-none rounded-lg focus:bg-black focus:text-tertiary ">
                     <option value="">Select Batch</option>
@@ -95,7 +95,7 @@ function Home() {
                     <option value="5-6PM">5-6PM</option>
             </select>
             </label>
-            <label className='text-white'>Fees Calculated
+            <label className='text-black'>Fees Calculated
             <input
               type="text"
               className="w-full p-4 bg-gray-500 border border-gray-600   rounded-lg text-gray-300"
@@ -116,12 +116,12 @@ function Home() {
           </form>
           </div>     
      
-      <div className="bg-blue-500 text-white p-4 mx-10 rounded-lg flex-wrap flex max-md:relative max-md:bottom-2">
-        <div className='flex justify-center gap-2'>
+      <div className="bg-blue-500 text-white p-4 mx-10 rounded-lg max-md:relative max-md:bottom-2 relative text-center">
+        <div className=''>
           <span className="text-xl">Thank you for visiting! ❤️</span> 
-            <span className=''>If you want to check out the code, it's on <a href="https://github.com/Shashmit" className="underline">GitHub</a></span>
-            <span className=''>Connect with me on <a href="https://www.linkedin.com/in/shashmit-kumar-23b75620a/" className="underline">LinkedIn</a></span>
-            </div>
+            <span className=''><a href="https://github.com/Shashmit" className="underline">GitHub  </a>|</span>
+            <span className=''> <a href="https://www.linkedin.com/in/shashmit-kumar-23b75620a/" className="underline">LinkedIn</a></span>
+        </div>
       </div>
     </div>
   )
