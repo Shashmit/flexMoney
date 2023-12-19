@@ -80,10 +80,10 @@ Secondly, the `Backend`.
 ```
 npm i
 nodemon index.js
-
+```
 
 
 There you go you have your portal.
-```<img width="1624" alt="Screenshot 2023-12-19 at 19 35 20" src="https://github.com/Shashmit/flexMoney/assets/70282239/5b480f67-7c95-45ff-a05a-f2442bf6f29d">
+<img width="1624" alt="Screenshot 2023-12-19 at 19 35 20" src="https://github.com/Shashmit/flexMoney/assets/70282239/5b480f67-7c95-45ff-a05a-f2442bf6f29d">
 <img width="737" alt="Screenshot 2023-12-19 at 19 35 52" src="https://github.com/Shashmit/flexMoney/assets/70282239/0d2b4a55-4024-498f-8497-671b14f85d2b">
 
