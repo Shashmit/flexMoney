@@ -68,3 +68,22 @@ The MongoDB database stores user information, adhering to a well-defined schema.
 
 This admission form leverages cutting-edge technologies to provide a secure, flexible, and user-friendly experience for participants enrolling in monthly Yoga Classes. The integration of Zod ensures type safety, Railway facilitates efficient hosting, and MongoDB serves as a reliable data store for seamless data management.
 
+###How to run the Project
+
+First lets setup the `Frontend`.
+```
+npm i
+npm run dev
+```
+Secondly, the `Backend`.
+`The database is intact in an env file hope nobody missues it`
+```
+npm i
+nodemon index.js
+
+
+
+There you go you have your portal.
+```<img width="1624" alt="Screenshot 2023-12-19 at 19 35 20" src="https://github.com/Shashmit/flexMoney/assets/70282239/5b480f67-7c95-45ff-a05a-f2442bf6f29d">
+<img width="737" alt="Screenshot 2023-12-19 at 19 35 52" src="https://github.com/Shashmit/flexMoney/assets/70282239/0d2b4a55-4024-498f-8497-671b14f85d2b">
+
