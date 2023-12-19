@@ -60,6 +60,10 @@ The MongoDB database stores user information, adhering to a well-defined schema.
 }
 ```
 
+##ER Diagram
+
+![Luc](https://github.com/Shashmit/flexMoney/assets/70282239/f8e7891f-b38e-4b79-ba30-1d9b3347fcdb)
+
 ## Conclusion
 
 This admission form leverages cutting-edge technologies to provide a secure, flexible, and user-friendly experience for participants enrolling in monthly Yoga Classes. The integration of Zod ensures type safety, Railway facilitates efficient hosting, and MongoDB serves as a reliable data store for seamless data management.
