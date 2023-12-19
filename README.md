@@ -53,7 +53,6 @@ The MongoDB database stores user information, adhering to a well-defined schema.
 {
   "_id": ObjectId,
   "name": String,
-  "age": Number,
   "selectedBatch": String,
   "paymentStatus": Boolean,
   // Additional fields as needed
